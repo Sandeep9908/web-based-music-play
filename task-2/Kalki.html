@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="music_player.css">
+</head>
+<body>
+    <div id="music">
+        <header>
+            <h1>Music Player</h1>
+            <input type="text" id="search" placeholder="Search for music...">
+        </header>
+        <main>
+            <div id="playlist">
+                <img src="Kalki.jpeg" alt="Kalki">
+                <h2>Playlist</h2>
+                <ul id="playlist-items">
+                    <li data-url="Bhairava_Anthem.mp3" data-title="Song 1" data-artist="Artist 1">Bhairava Anthem Song – Diljit Dosanjh, Deepak Blue</li>
+                    <li data-url="Theme_of_Kalki.mp3" data-title="Song 2" data-artist="Artist 2">Theme of Kalki Song – Kaala Bhairava, Ananthu, Gowtham Bharadwaj</li>
+                    <li data-url="Ta_Takkara.mp3" data-title="Song 3" data-artist="Artist 3">Ta Takkara Song – Sanjith Hegde, Dhee, Santhosh Narayanan</li>
+                    <li data-url="Hope_of_Shambala.mp3" data-title="Song 4" data-artist="Artist 4">Hope of Shambala Song – Shobana Chandrakumar</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <span id="current_song"></span><br>
+            <audio id="audio" controls></audio>
+            <div id="controls">
+                <button id="play-pause">Play</button>
+                <button id="next">Next</button>
+                <input type="range" id="volume" min="0" max="100" value="50">
+            </div>
+        </footer>
+    </div>
+    <script src="music_player.js"></script>
+</body>
+</html>
